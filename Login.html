@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Start Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;400;600;800&family=Open+Sans:wght@300;400;600;800&display=swap"
+    rel="stylesheet">
+  <!-- End Google Fonts -->
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+    ================
+    = Start Header =
+    ================
+  -->
+  <header>
+    <!-- Start Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="truck d-flex align-items-center">
+            <i class="icon-truck"></i>
+            <span>متابعة الطلب</span>
+          </div>
+          <div class="languages">
+            <span class="en text-muted"> English </span> |
+            <span class="ar"> العربية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Header -->
+
+    <!-- Start Mid Header -->
+    <div class="mid-header">
+      <div class="container">
+        <div class="d-flex align-items-center flex-wrap mobile-column">
+          <div class="logo">
+            <img src="images/logo.jpeg" alt="logo">
+          </div>
+          <div class="search">
+            <input type="text" placeholder="عن ماذا تبحث ؟">
+            <button>
+              <i class="icon-search"></i>
+            </button>
+          </div>
+          <div class="btns">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-toggle="collapse"
+              data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu-btn">
+                <div class="menu-btn__burger">
+                </div>
+              </div>
+            </button>
+
+            <!--
+              =========================
+              == Start Cart DropDown ==
+              =========================
+            -->
+
+            <!-- Cart DropDown Button -->
+            <!--
+              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              // data-cart Attribute Has Number Of Products In Cart
+              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            -->
+            <i class="icon-shopping-cart cart" data-cart="2" id="cart" data-toggle="dropdown" aria-expanded="false"></i>
+            <!-- Cart DropDown Menu -->
+            <div class="cart-dropdown dropdown-menu" aria-labelledby="cart">
+              <div class="cart-item d-flex">
+                <div class="cart-img text-center ml-2">
+                  <img src="images/Products/01.jpg" class="rounded" alt="Product01">
+                </div>
+                <div class="cart-info py-1 d-flex flex-column align-items-start">
+                  <p class="cart-name">قميص</p>
+                  <p class="cart-quant">الكمية : <span>1</span></p>
+                  <p class="cart-size">المقاس : <span>1</span></p>
+                  <p class="cart-price mt-auto">200 جنية</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="cart-item d-flex">
+                <div class="cart-img text-center ml-2">
+                  <img src="images/Products/01.jpg" class="rounded" alt="Product01">
+                </div>
+                <div class="cart-info py-1 d-flex flex-column align-items-start">
+                  <p class="cart-name">قميص</p>
+                  <p class="cart-quant">الكمية : <span>1</span></p>
+                  <p class="cart-size">المقاس : <span>1</span></p>
+                  <p class="cart-price mt-auto">200 جنية</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="product-pay mt-2">
+                <button class="pay btn-block">
+                  الدفع
+                </button>
+              </div>
+            </div>
+            <!--
+              =======================
+              == End Cart DropDown ==
+              =======================
+            -->
+            <i class="icon-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Min Header -->
+
+    <!-- Start Navbar -->
+    <nav>
+      <div class="container">
+        <!-- ٍStart Navbar Disktop -->
+        <div class="disktop-nav d-none d-lg-block">
+          <ul class="list-unstyled mainList">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الرجال</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">النساء</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الاطفال</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navbar Disktop -->
+
+        <!-- ٍStart Navbar Mobile -->
+        <div class="mobile-nav collapse" id="mainNavbar">
+          <ul class="list-unstyled mainList">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-1" aria-controls="list-1"
+              aria-expanded="false">
+              <a class="nav-link" href="#">الرجال</a>
+              <div class="sub-list collapse" id="list-1" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-2" aria-controls="list-2"
+              aria-expanded="false">
+              <a class="nav-link" href="#">النساء</a>
+              <div class="sub-list collapse" id="list-2" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-3" aria-controls="list-3"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <a class="nav-link" href="#">الاطفال</a>
+              <div class="sub-list collapse" id="list-3" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navbar Mobile -->
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+  <!--
+    ==============
+    = End Header =
+    ==============
+  -->
+
+  <!-- 
+    =========================
+    == Start Register Page ==
+    =========================
+  -->
+  <section style="padding: 127.1px 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h3 class="text-center">تسجيل الدخول</h3>
+          <div class="input-group flex-column mt-3">
+            <label class="input-underlined" for="input3">
+              <input type="text" required id="input3">
+              <span class="input-label">الايميل</span>
+            </label>
+            <span class="err-msg">من فضلك ادخل الايميل</span>
+          </div>
+          <div class="input-group flex-column mt-3">
+            <label class="input-underlined" for="input5">
+              <input type="password" required id="input5">
+              <span class="input-label">كلمة السر</span>
+            </label>
+            <span class="err-msg">من فضلك ادخل كلمة السر</span>
+          </div>
+          <div class="d-flex align-items-end">
+            <button class="main-btn btn-block">تسجيل</button>
+            <button class="btn btn-link">انشىء حساب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+    =======================
+    == End Register Page ==
+    =======================
+  -->
+
+  <!--
+        ================
+        = Start Footer =
+        ================
+      -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <h3>الاقسام</h3>
+            <ul class="list-unstyled">
+              <li>الرجال</li>
+              <li>النساء</li>
+              <li>الاطفال</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <h3>صفحات متنوعه</h3>
+            <ul class="list-unstyled">
+              <li>مساعدة</li>
+              <li>سياسة الاستبدال</li>
+              <li>الشروط والاحكام</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <h3>تواصل معنا</h3>
+            <div class="social">
+              <i class='icon-facebook'></i>
+              <i class='icon-instagram'></i>
+              <i class='icon-whatsapp'></i>
+              <i class='icon-twitter'></i>
+            </div>
+            <hr>
+            <button class="order-track"> تتبع الطلب </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--
+        ==============
+        = End Footer =
+        ==============
+      -->
+
+  <!-- JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

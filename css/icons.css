@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?mu3ena");
+  src: url("../fonts/icomoon.eot?mu3ena#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?mu3ena") format("truetype"),
+    url("../fonts/icomoon.woff?mu3ena") format("woff"),
+    url("../fonts/icomoon.svg?mu3ena#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye:before {
+  content: "\e901";
+}
+.icon-edit-pencil:before {
+  content: "\e902";
+}
+.icon-delete:before {
+  content: "\e903";
+}
+.icon-add_circle:before {
+  content: "\e900";
+}
+.icon-phone-outline:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-arrow-left:before {
+  content: "\e907";
+}
+.icon-filter:before {
+  content: "\e90a";
+}
+.icon-shopping-cart:before {
+  content: "\e908";
+}
+.icon-transfer:before {
+  content: "\e909";
+}
+.icon-arrows:before {
+  content: "\e909";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-wallet:before {
+  content: "\e90b";
+}
+.icon-money:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-magnifier:before {
+  content: "\e906";
+}
+.icon-lookup:before {
+  content: "\e906";
+}
+.icon-find:before {
+  content: "\e906";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-profile:before {
+  content: "\e90c";
+}
+.icon-avatar:before {
+  content: "\e90c";
+}
+.icon-heart:before {
+  content: "\e90e";
+}
+.icon-love:before {
+  content: "\e90e";
+}
+.icon-like:before {
+  content: "\e90e";
+}
+.icon-truck:before {
+  content: "\e90d";
+}
+.icon-transport:before {
+  content: "\e90d";
+}
+.icon-transaction:before {
+  content: "\e90d";
+}
+.icon-shipping:before {
+  content: "\e90d";
+}

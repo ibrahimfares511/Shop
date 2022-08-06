@@ -1,0 +1,187 @@
+/*
+  -- In HTML File You Will Find This Div ==>  [<div class="col-12 row flex-row-reverse">].
+  -- You Need Add This Class == >  [align-items-center].
+  -- The Final Code Will Be ==> [<div class="col-12 row flex-row-reverse align-items-center">].
+  -- Then Add Css Style In Your File And Remove Classes Not Used.
+*/
+
+/*
+  ==============================
+  == Start Order History Page ==
+  ==============================
+*/
+.history-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.search {
+	position: relative;
+}
+.search input {
+	width: 100%;
+	padding: 10px;
+	padding-left: 45px;
+	border: 1px solid #b8b8b8;
+	outline: none !important;
+	transition: all var(--transition-time) ease-in-out;
+}
+.search input:focus {
+	border-color: var(--main-color);
+}
+.search button {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: var(--main-color);
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+}
+.search button i {
+	color: var(--white);
+}
+.nav-tabs {
+	border-bottom: 1px solid var(--main-color);
+}
+.nav-tabs .nav-item .nav-link {
+	color: var(--second-color);
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: var(--main-color);
+	background-color: #fff;
+	border-color: var(--main-color) var(--main-color) #fff;
+}
+.nav-tabs .nav-link:focus:not(.active),
+.nav-tabs .nav-link:hover:not(.active) {
+	border-color: transparent;
+}
+
+.history-body {
+	text-align: center;
+	border: 1px solid var(--main-color);
+	border-top: none;
+	overflow-y: auto;
+	max-height: 484px;
+}
+
+.history-item {
+	display: flex;
+	justify-content: space-around;
+}
+.history-info {
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+	margin: 10px 0;
+	/* border-bottom: 5px solid #dee2e6; */
+}
+
+.history-item ul.history-timeLine {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(50px);
+}
+
+.history-item ul.history-timeLine li {
+	list-style: none;
+	position: relative;
+	border-top: 1px dashed var(--secondary);
+	padding: 0;
+	width: 135px;
+	transform: translateX(35px);
+}
+.history-item ul.history-timeLine li.active {
+	border-color: var(--success);
+}
+.history-item ul.history-timeLine li:first-child {
+	border-top: none;
+}
+.history-item ul.history-timeLine li:last-child {
+	border-top: 1px dashed var(--secondary);
+}
+
+.history-item ul.history-timeLine li::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: var(--secondary);
+	transition: all var(--transition-time) ease-in-out;
+}
+.history-item ul.history-timeLine li.active::before {
+	background-color: var(--success);
+}
+.history-item ul.history-timeLine li.active + li {
+	border-top-color: var(--success);
+}
+ul.history-timeLine li div {
+	color: var(--gray);
+	position: relative;
+	font-size: 1em;
+	transform: translate(-50px, 20px);
+}
+
+.history-product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0em;
+	/* flex-direction: row;
+	justify-content: space-evenly; */
+}
+.history-img {
+	width: 150px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+.history-img img {
+	height: 100%;
+	width: 100%;
+}
+.history-img + p {
+	width: 220px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	ul.history-timeLine li div {
+		font-size: 0.9em;
+		transform: translate(-32px, 20px);
+	}
+}
+
+/* Start Responseve*/
+@media (max-width: 767.98px) {
+	.history-header {
+		flex-direction: column;
+	}
+
+	.history-filter ul {
+		flex-direction: column;
+		border-bottom-color: #dee2e6;
+	}
+	.history-filter .nav-tabs .nav-item.show .nav-link,
+	.history-filter .nav-tabs .nav-link.active {
+		border-color: var(--main-color);
+	}
+	.history-body {
+		border-color: #dee2e6;
+	}
+	.history-item ul.history-timeLine {
+		margin-top: 15px;
+		transform: translateX(0px);
+	}
+	.history-product {
+		margin-top: 1em;
+	}
+}
+/*
+  ============================
+  == End Order History Page ==
+  ============================
+*/

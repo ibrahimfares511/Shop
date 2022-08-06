@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Start Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;400;600;800&family=Open+Sans:wght@300;400;600;800&display=swap"
+    rel="stylesheet">
+  <!-- End Google Fonts -->
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--
+    ================
+    = Start Header =
+    ================
+  -->
+  <header>
+    <!-- Start Top Header -->
+    <div class="top-header">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="truck d-flex align-items-center">
+            <i class="icon-truck"></i>
+            <span>متابعة الطلب</span>
+          </div>
+          <div class="languages">
+            <span class="en text-muted"> English </span> |
+            <span class="ar"> العربية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Header -->
+
+    <!-- Start Mid Header -->
+    <div class="mid-header">
+      <div class="container">
+        <div class="d-flex align-items-center flex-wrap mobile-column">
+          <div class="logo">
+            <img src="images/logo.jpeg" alt="logo">
+          </div>
+          <div class="search">
+            <input type="text" placeholder="عن ماذا تبحث ؟">
+            <button>
+              <i class="icon-search"></i>
+            </button>
+          </div>
+          <div class="btns">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-toggle="collapse"
+              data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="menu-btn">
+                <div class="menu-btn__burger">
+                </div>
+              </div>
+            </button>
+
+            <!--
+              =========================
+              == Start Cart DropDown ==
+              =========================
+            -->
+
+            <!-- Cart DropDown Button -->
+            <!--
+              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              // data-cart Attribute Has Number Of Products In Cart
+              !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            -->
+            <i class="icon-shopping-cart cart" data-cart="2" id="cart" data-toggle="dropdown" aria-expanded="false"></i>
+            <!-- Cart DropDown Menu -->
+            <div class="cart-dropdown dropdown-menu" aria-labelledby="cart">
+              <div class="cart-item d-flex">
+                <div class="cart-img text-center ml-2">
+                  <img src="images/Products/01.jpg" class="rounded" alt="Product01">
+                </div>
+                <div class="cart-info py-1 d-flex flex-column align-items-start">
+                  <p class="cart-name">قميص</p>
+                  <p class="cart-quant">الكمية : <span>1</span></p>
+                  <p class="cart-size">المقاس : <span>1</span></p>
+                  <p class="cart-price mt-auto">200 جنية</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="cart-item d-flex">
+                <div class="cart-img text-center ml-2">
+                  <img src="images/Products/01.jpg" class="rounded" alt="Product01">
+                </div>
+                <div class="cart-info py-1 d-flex flex-column align-items-start">
+                  <p class="cart-name">قميص</p>
+                  <p class="cart-quant">الكمية : <span>1</span></p>
+                  <p class="cart-size">المقاس : <span>1</span></p>
+                  <p class="cart-price mt-auto">200 جنية</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="product-pay mt-2">
+                <button class="pay btn-block">
+                  الدفع
+                </button>
+              </div>
+            </div>
+            <!--
+              =======================
+              == End Cart DropDown ==
+              =======================
+            -->
+            <i class="icon-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Min Header -->
+
+    <!-- Start Navbar -->
+    <nav>
+      <div class="container">
+        <!-- ٍStart Navbar Disktop -->
+        <div class="disktop-nav d-none d-lg-block">
+          <ul class="list-unstyled mainList">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الرجال</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">النساء</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الاطفال</a>
+              <div class="sub-list">
+                <ul class="list-unstyled">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navbar Disktop -->
+
+        <!-- ٍStart Navbar Mobile -->
+        <div class="mobile-nav collapse" id="mainNavbar">
+          <ul class="list-unstyled mainList">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-1" aria-controls="list-1"
+              aria-expanded="false">
+              <a class="nav-link" href="#">الرجال</a>
+              <div class="sub-list collapse" id="list-1" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-2" aria-controls="list-2"
+              aria-expanded="false">
+              <a class="nav-link" href="#">النساء</a>
+              <div class="sub-list collapse" id="list-2" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#list-3" aria-controls="list-3"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <a class="nav-link" href="#">الاطفال</a>
+              <div class="sub-list collapse" id="list-3" data-parent="#mainNavbar">
+                <ul class="list-unstyled mr-4">
+                  <li><a href="#">قمصان</a></li>
+                  <li><a href="#">تيشرت</a></li>
+                  <li><a href="#">بنطلونات</a></li>
+                  <li><a href="#">سويت شيرت</a></li>
+                  <li><a href="#">جبردين</a></li>
+                  <li><a href="#">بدلات</a></li>
+                  <li><a href="#">ملابس رياضية</a></li>
+                  <li><a href="#">ملابس سياحة</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navbar Mobile -->
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+  <!--
+    ==============
+    = End Header =
+    ==============
+  -->
+
+  <!--
+    ================
+    = Start Slider =
+    ================
+  -->
+  <main>
+    <div class="container">
+      <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Slider/01.jpg" class="d-block w-100" alt="image-1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Slider/02.jpg" class="d-block w-100" alt="image-2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Slider/03.jpg" class="d-block w-100" alt="image-3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Slider/04.jpg" class="d-block w-100" alt="image-4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+          <span class="icon-arrow icon-arrow-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+          <span class="icon-arrow icon-arrow-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <!--
+    ==============
+    = End Slider =
+    ==============
+  -->
+
+  <!--
+    ==================
+    = Start Category =
+    ==================
+  -->
+  <section class="category py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card">
+            <div class="cat-img">
+              <img src="images/Category/01.PNG" alt="category01">
+            </div>
+            <div class="cat-content">
+              <h4>بدلات</h4>
+              <button class="d-flex align-items-center">
+                تسوق الأن
+                <i class="icon-arrow-left"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card">
+            <div class="cat-img">
+              <img src="images/Category/02.PNG" alt="category01">
+            </div>
+            <div class="cat-content">
+              <h4>قمصان</h4>
+              <button class="d-flex align-items-center">
+                تسوق الأن
+                <i class="icon-arrow-left"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card">
+            <div class="cat-img">
+              <img src="images/Category/03.PNG" alt="category01">
+            </div>
+            <div class="cat-content">
+              <h4>ملابس خروج</h4>
+              <button class="d-flex align-items-center">
+                تسوق الأن
+                <i class="icon-arrow-left"></i>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+    ================
+    = End Category =
+    ================
+  -->
+
+  <!--
+    ==================
+    = Start Products =
+    ==================
+  -->
+  <section class="products py-5">
+    <div class="container">
+      <h2 class="text-center mb-3">التسوق السريع</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card">
+            <div class="card-img">
+              <img class="card-img-top" src="images/Products/01.jpg" alt="product 1">
+              <div class="discount">20&percnt;</div>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-name">سروال</li>
+                <li class="card-new-price">200 جنية</li>
+                <li class="text-muted card-old-price">220 جنية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card">
+            <div class="card-img">
+              <img class="card-img-top" src="images/Products/02.jpg" alt="product 2">
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-name">تيشرت</li>
+                <li class="card-new-price">220 جنية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card">
+            <div class="card-img">
+              <img class="card-img-top" src="images/Products/03.jpg" alt="product 3">
+              <div class="discount">20&percnt;</div>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-name">جاكيت</li>
+                <li class="card-new-price">120 جنية</li>
+                <li class="text-muted card-old-price">200 جنية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="card">
+            <div class="card-img">
+              <img class="card-img-top" src="images/Products/04.jpg" alt="product 4">
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="card-name">سويت شيرت</li>
+                <li class="card-new-price">220 جنية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
+    ================
+    = End Products =
+    ================
+  -->
+
+  <!--
+    ================
+    = Start Footer =
+    ================
+  -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <h3>الاقسام</h3>
+            <ul class="list-unstyled">
+              <li>الرجال</li>
+              <li>النساء</li>
+              <li>الاطفال</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <h3>صفحات متنوعه</h3>
+            <ul class="list-unstyled">
+              <li>مساعدة</li>
+              <li>سياسة الاستبدال</li>
+              <li>الشروط والاحكام</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <h3>تواصل معنا</h3>
+            <div class="social">
+              <i class='icon-facebook'></i>
+              <i class='icon-instagram'></i>
+              <i class='icon-whatsapp'></i>
+              <i class='icon-twitter'></i>
+            </div>
+            <hr>
+            <button class="order-track"> تتبع الطلب </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--
+    ==============
+    = End Footer =
+    ==============
+  -->
+
+  <!-- JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
